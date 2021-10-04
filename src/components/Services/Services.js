@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import CourseItem from '../CourseItem/CourseItem';
 
 const Services = () => {
+    const [courses, setCourses] = useState([])
+    useEffect(() => {
+        fetch('fakeCourses.json')
+            .then(res => res.json())
+            .then(data => setCourses(data))
+    }, [])
     return (
         <main>
-            <h2>services</h2>
+            <div className='container'>
+                {
+                    courses.map(course => <CourseItem key={course.id} course={course}></CourseItem>)
+                }
+            </div>
         </main>
     );
 };
