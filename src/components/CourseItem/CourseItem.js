@@ -1,4 +1,5 @@
 import React from 'react';
+import StarRatings from 'react-star-ratings';
 
 const CourseItem = (props) => {
     const { title, institute, rating, totalRate, lebel, price, imgUrl } = props.course;
@@ -13,7 +14,7 @@ const CourseItem = (props) => {
                     <p><small>Offer by: {institute}</small></p>
                     <div className="d-flex align-items-center justify-content-between">
                         <div>
-                            <p>Rate: <strong>{rating}</strong> || Total Enrolled <strong>{totalRate}</strong></p>
+                            <p>Ratings: <StarRatings rating={rating} starRatedColor='gold' numberOfStars='5' starEmptyColor='#000' starDimension="20px"></StarRatings> <strong>{rating}</strong> || Total Enrolled <strong>{totalRate}</strong></p>
                             <h6>Lebel: {lebel}</h6>
                         </div>
                         <div>
