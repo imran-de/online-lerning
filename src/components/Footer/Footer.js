@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer>
-            <p className='text-center'>Learn Without Limit. Developed by S Imran Ahmed</p>
+            <p className='text-center'>&copy; 2021 All rights reserved <strong>Learn Without Limit.</strong> Developed by <strong>S Imran Ahmed</strong></p>
         </footer>
     );
 };

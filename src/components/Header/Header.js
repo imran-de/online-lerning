@@ -19,10 +19,13 @@ const Header = () => {
                                 <Link className="nav-link" to="/Services">Courses</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/Profile">Profile</Link>
+                                <Link className="nav-link" to="/contact">Contact Us</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to='/About-Us'>About</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to='/Profile'>Acount</Link>
                             </li>
                         </ul>
                         <form className="d-flex">

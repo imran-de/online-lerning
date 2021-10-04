@@ -6,6 +6,8 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Services from './components/Services/Services';
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Account from './components/Account/Account';
 
 function App() {
   return (
@@ -28,7 +30,10 @@ function App() {
             <About></About>
           </Route>
           <Route exact path='/Profile'>
-            <h2>This is user Profile</h2>
+            <Account></Account>
+          </Route>
+          <Route exact path='/Contact'>
+            <Contact></Contact>
           </Route>
 
           {/* 404 page */}

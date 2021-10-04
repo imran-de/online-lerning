@@ -2,7 +2,6 @@ import React from 'react';
 
 const ExploreCard = (props) => {
     const { name, courses, thumbnail } = props.course
-    console.log(props)
     return (
         <article className='col'>
             <div className="row shadow rounded h-100">
