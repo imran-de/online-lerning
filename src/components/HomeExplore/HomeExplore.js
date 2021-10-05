@@ -3,8 +3,9 @@ import ExploreCard from '../ExploreCard/ExploreCard';
 
 const HomeExplore = () => {
     const [explore, setExplore] = useState([])
+    // call all type of courses api to rendure courses name UI
     useEffect(() => {
-        fetch('fakeCourseHome.json')
+        fetch('./fakeCourseHome.JSON')
             .then(res => res.json())
             .then(data => setExplore(data))
     }, [])

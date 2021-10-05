@@ -3,6 +3,7 @@ import './Contact.css'
 const Contact = () => {
     return (
         <main>
+            {/* page header banner */}
             <section id='banner-contact'>
                 <div className='text-center'>
                     <h1 className='fw-bold text-light display-1'>Contact Us</h1>
@@ -12,6 +13,7 @@ const Contact = () => {
             <section className='container'>
                 <div className="row">
                     <div className="col-md-6 d-flex align-items-center">
+                        {/* Contact address */}
                         <div>
                             <h1>Our Office:</h1>
                             <address>
@@ -22,6 +24,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="col-md-6 my-5">
+                        {/* contact form */}
                         <form>
                             <div class="mb-3">
                                 <label for="exampleInputName" class="form-label">Name</label>

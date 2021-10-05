@@ -4,6 +4,7 @@ import './About.css'
 const About = () => {
     return (
         <main>
+            {/* about banner */}
             <section id='banner-about'>
                 <div className='text-center'>
                     <h1 className='fw-bold text-light display-1'>About Us</h1>

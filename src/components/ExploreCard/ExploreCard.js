@@ -1,6 +1,7 @@
 import React from 'react';
 
 const ExploreCard = (props) => {
+    //destruture props from course object
     const { name, courses, thumbnail } = props.course
     return (
         <article className='col'>

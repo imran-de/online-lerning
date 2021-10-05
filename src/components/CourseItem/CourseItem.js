@@ -1,10 +1,13 @@
 import React from 'react';
+//for showing star rating . it's shows some error on console but work properly
 import StarRatings from 'react-star-ratings';
 
 const CourseItem = (props) => {
+    //destrure props from course 
     const { title, institute, rating, totalRate, lebel, price, imgUrl } = props.course;
+    const { handleDetails, course } = props;
     return (
-        <article className='row course-container border-bottom my-4'>
+        <div className='row course-container border-bottom my-4'>
             <div className='d-flex align-items-center my-3'>
                 <div className='me-3'>
                     <img src={imgUrl} className='img-fluid' alt="" />
@@ -14,7 +17,7 @@ const CourseItem = (props) => {
                     <p><small>Offer by: {institute}</small></p>
                     <div className="d-flex align-items-center justify-content-between">
                         <div>
-                            <p>Ratings: <StarRatings rating={rating} starRatedColor='gold' numberOfStars='5' starEmptyColor='#000' starDimension="20px"></StarRatings> <strong>{rating}</strong> || Total Enrolled <strong>{totalRate}</strong></p>
+                            <p>Ratings: <StarRatings rating={rating} starRatedColor='gold' starEmptyColor='#000' starDimension="16px" starSpacing="1px"></StarRatings> <strong>{rating}</strong> || Total Enrolled <strong>{totalRate}</strong></p>
                             <h6>Lebel: {lebel}</h6>
                         </div>
                         <div>
@@ -22,11 +25,10 @@ const CourseItem = (props) => {
                         </div>
                     </div>
                     <p><strong>Course Fee:</strong> ${price}</p>
+                    <button className='btn btn-outline-info' onClick={() => handleDetails(course)}>More Details</button>
                 </div>
-
             </div>
-
-        </article>
+        </div>
     );
 };
 
