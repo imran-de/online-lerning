@@ -9,7 +9,7 @@ const HomeOutCome = () => {
                 <div className="row">
                     {/* images area */}
                     <div className="col-md-6">
-                        <img src={outcomes} alt="" />
+                        <img src={outcomes} className='img-fluid' alt="" />
                     </div>
                     {/* text area */}
                     <div className="col-md-6 d-flex align-items-center">

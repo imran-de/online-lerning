@@ -8,7 +8,7 @@ const TakeNextStep = () => {
                 <div className="row">
                     {/* images area */}
                     <div className="col-md-6">
-                        <img src={nextStep} alt="" />
+                        <img className='img-fluid' src={nextStep} alt="" />
                     </div>
                     {/* text area */}
                     <div className="col-md-6 d-flex align-items-center">
